@@ -3,6 +3,10 @@ package composite;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/*
+ * Un Team definisce un oggetto Composite, ossia un aggregazione di Leaf,
+ * usando l'interfaccia Department.
+ */
 public class Team implements Department{
 	
 	private Collection<Department> members;
@@ -13,7 +17,6 @@ public class Team implements Department{
 
 	@Override
 	public void print() {
-		System.out.println("Team members: ");
 		this.members.forEach((t) -> t.print());
 	}
 

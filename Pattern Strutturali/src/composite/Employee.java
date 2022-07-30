@@ -1,5 +1,8 @@
 package composite;
 
+/*
+ * Employee definisce un tipo Leaf, con alcune funzioni che non possono essere implementate.
+ */
 public class Employee implements Department{
 
 	private String name;

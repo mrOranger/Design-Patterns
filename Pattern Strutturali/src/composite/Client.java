@@ -2,6 +2,10 @@ package composite;
 
 public class Client {
 	
+	/*
+	 * Il client gestisce un Employee, un Manager o un Team in maniera
+	 * indipendente usando l'interfaccia Department.
+	 */
 	public static void main(String[] args) {
 		Department emp1 = new Employee("Mario", "Rossi");
 		Department emp2 = new Employee("Maria", "Verdi");
@@ -21,6 +25,7 @@ public class Client {
 		System.out.println("Il team 1 costa in totale: " + team1.getExpenditure());
 		System.out.println("Il team 2 costa in totale: " + team2.getExpenditure());
 		
+		// Possiamo aggiungere un team ad un altro team
 		System.out.println("Aggiungo un nuovo team a quello già presente");
 		team1.add(team2);
 		team1.print();

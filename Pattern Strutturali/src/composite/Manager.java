@@ -1,5 +1,8 @@
 package composite;
 
+/*
+ * Manager definisce un oggetto Leaf.
+ */
 public class Manager implements Department{
 	
 	private String name;
