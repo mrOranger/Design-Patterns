@@ -1,13 +1,11 @@
 package strategy;
 
+import java.util.List;
+
 public class Client {
 	public static void main(String[] args) {
-	
 		Sequence<Integer> intSequence = new Sequence<>(new ClassicForPrint());
-		intSequence.add(1);
-		intSequence.add(2);
-		intSequence.add(3);
-		intSequence.add(4);
+		intSequence.add(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 		intSequence.print();
 		intSequence.setStrategy(new ForEachPrint());
 		intSequence.print();

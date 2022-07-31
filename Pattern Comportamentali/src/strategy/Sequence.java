@@ -1,6 +1,7 @@
 package strategy;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class Sequence<T> {
@@ -19,6 +20,10 @@ public class Sequence<T> {
 	
 	public void add(T elem) {
 		this.list.add(elem);
+	}
+	
+	public void add(Collection<T> elems) {
+		this.list.addAll(elems);
 	}
 	
 	public void print() {
