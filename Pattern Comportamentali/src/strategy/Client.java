@@ -2,6 +2,10 @@ package strategy;
 
 import java.util.List;
 
+/*
+ * La classe Client chiama un oggetto Context, e modifica l'algoritmo
+ * in maniera dinamica.
+ */
 public class Client {
 	public static void main(String[] args) {
 		Sequence<Integer> intSequence = new Sequence<>(new ClassicForPrint());

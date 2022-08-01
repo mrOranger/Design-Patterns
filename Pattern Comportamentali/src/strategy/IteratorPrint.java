@@ -1,14 +1,16 @@
 package strategy;
 
 import java.util.Iterator;
-import java.util.List;
 
+/*
+ * Classe ConcreteStrategy
+ */
 public class IteratorPrint implements Printable{
 
 	@Override
-	public void print(List<?> list) {
+	public void print(Sequence<?> sequence) {
 		System.out.println("Iterator print strategy");
-		Iterator<?> iterator = list.iterator();
+		Iterator<?> iterator = sequence.getList().iterator();
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}

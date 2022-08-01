@@ -1,13 +1,14 @@
 package strategy;
 
-import java.util.List;
-
+/*
+ * Classe ConcreteStrategy
+ */
 public class StreamPrint implements Printable{
 
 	@Override
-	public void print(List<?> list) {
+	public void print(Sequence<?> sequence) {
 		System.out.println("Stream print strategy");
-		list.stream().forEach(System.out::println);
+		sequence.getList().stream().forEach(System.out::println);
 	}
 
 }

@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+/*
+ * Sequence rappresenta la classe Context che contiene
+ * un riferimento ad una classe ConcreteStrategy usando l'interfaccia Strategy,
+ * quindi richiama il metodo definito in questa.
+ */
 public class Sequence<T> {
 	
 	private List<T> list;
@@ -26,7 +31,15 @@ public class Sequence<T> {
 		this.list.addAll(elems);
 	}
 	
+	public List<T> getList(){
+		return this.list;
+	}
+	
+	public void setList(List<T> list) {
+		this.list = list;
+	}
+	
 	public void print() {
-		this.printStrategy.print(list);
+		this.printStrategy.print(this);
 	}
 }
