@@ -1,4 +1,4 @@
-package decorator.badCode;
+package decorator.bad;
 
 /*
  * Un esempio di perchè vale la pena usare il pattern Decorator invece che il classico

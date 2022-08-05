@@ -1,4 +1,4 @@
-package decorator.badCode;
+package decorator.bad;
 
 public class CarWithSpoilerAndMuffler extends CarWithSpoiler{
 
