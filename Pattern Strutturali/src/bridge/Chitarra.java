@@ -1,5 +1,8 @@
 package bridge;
 
+/*
+ * Rappresenta la classe Concrete Implementator
+ */
 public class Chitarra extends Strumento{
 	
 	public Chitarra(Configurazione configurazione) {

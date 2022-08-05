@@ -1,5 +1,8 @@
 package bridge;
 
+/*
+ * Rappresenta la Concrete Implementator
+ */
 public class Sassofono extends Strumento{
 
 	public Sassofono(Configurazione configurazione) {

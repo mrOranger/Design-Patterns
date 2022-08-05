@@ -1,5 +1,10 @@
 package bridge;
 
+/*
+ * Il client fa uso delle classi Concrete Implementator passandoci
+ * un Concrete Abstractor, e con la possibilità di cambiare la struttura
+ * di un concrete implementator a run-time.
+ */
 import java.util.Scanner;
 
 public class Client {

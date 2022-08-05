@@ -1,5 +1,8 @@
 package bridge;
 
+/*
+ * Classe che rappresenta la RefinedAbstraction
+ */
 public class ConfigurazioneSx implements Configurazione{
 
 	@Override

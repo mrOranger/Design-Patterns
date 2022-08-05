@@ -20,7 +20,7 @@ gli oggetti concreti con cui avremo a che fare.
 - __Implementator__ è l'interfaccia usata dalle classi che implementano l'astrazione. Diversamente
 dall'intefaccia _Abstraction_ essa fornisce solo le implementazioni di base, mentre Abstraction
 quelle di alto livello.
-- __Concrete Implementator (ChitarraSx, ChitarraDx ...) definisce la realizzazione concreta di
+- __Concrete Implementator__ (ChitarraSx, ChitarraDx ...) definisce la realizzazione concreta di
 _Implementator_. 
 
 ## Applicabilità

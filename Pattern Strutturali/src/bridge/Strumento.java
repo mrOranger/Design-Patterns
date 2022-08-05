@@ -1,5 +1,8 @@
 package bridge;
 
+/*
+ * Classe che rappresenta la classe Implementator
+ */
 public abstract class Strumento {
 	
 	protected Configurazione configurazione;
