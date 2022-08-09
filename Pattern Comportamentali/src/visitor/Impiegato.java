@@ -1,4 +1,4 @@
-package visitor.bad;
+package visitor;
 
 public abstract class Impiegato {
 	
@@ -36,11 +36,10 @@ public abstract class Impiegato {
 		this.stipendio = stipendio;
 	}
 	
-	public abstract double calcolaStipedioLordo();
-	public abstract double calcolaStipendioNetto();
+	public abstract double calcolaStipedio(VisitorStipendio visitorStipendio);
 	
 	@Override
 	public String toString() {
-		return this.nome + " " + this.cognome + " n." + this.calcolaStipendioNetto() + " l." + this.calcolaStipedioLordo();
+		return this.nome + " " + this.cognome;
 	}
 }

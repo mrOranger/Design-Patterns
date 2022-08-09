@@ -1,4 +1,4 @@
-package visitor.bad;
+package visitor;
 
 public class Segretario extends Impiegato{
 
@@ -7,15 +7,10 @@ public class Segretario extends Impiegato{
 	}
 	
 	@Override
-	public double calcolaStipedioLordo() {
-		return this.getStipendio();
+	public double calcolaStipedio(VisitorStipendio visitorStipendio) {
+		return visitorStipendio.calcolaStipendio(this);
 	}
 
-	@Override
-	public double calcolaStipendioNetto() {
-		return this.getStipendio()*0.5;
-	}
-	
 	@Override
 	public String toString() {
 		return "Segretario: " + super.toString();
