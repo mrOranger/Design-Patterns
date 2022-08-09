@@ -17,6 +17,7 @@ public class Client {
 		comitivaMap.addPersona(new Persona("C", "D", "3"));
 		comitivaMap.addPersona(new Persona("D", "E", "4"));
 		
+		
 		System.out.println("Itero sulla lista");
 		var iteratoreList = comitivaList.getIterator();
 		while(iteratoreList.hasNext()) {
